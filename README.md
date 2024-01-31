@@ -1,8 +1,9 @@
 # 这是一个Python代码，可以将一个大图片批量剪切为两个小图片，你需要安装Python和相应的IDM，我正在使用Charm，您需要在Python中安装Pillow和So组件
 
-from PIL import Image
-import os
-def split_image(image_path, output_folder):
+    from PIL import Image
+     import os
+     def split_image(image_path, output_folder):
+
     # 打开图片
     img = Image.open(image_path)
     img_width, img_height = img.size
@@ -27,7 +28,7 @@ def split_image(image_path, output_folder):
     img2.save(img2_path)
     print(f"Saved {img2_path}")
 
-def batch_split_images(folder_path, output_folder):
+     def batch_split_images(folder_path, output_folder):
     # 遍历目录下的所有文件
     for filename in os.listdir(folder_path):
         # 构建完整的文件路径
@@ -40,10 +41,10 @@ def batch_split_images(folder_path, output_folder):
                 print(f"Successfully processed {filename}")
             except Exception as e:
                 print(f"Failed to process {filename}. Error: {e}")
-# 使用示例
-source_folder = "D:\\big"
-output_folder = "D:\\small"
-# 确保输出文件夹存在
-os.makedirs(output_folder, exist_ok=True)
-batch_split_images(source_folder, output_folder)
+     # 使用示例
+     source_folder = "D:\\big"
+     output_folder = "D:\\small"
+     # 确保输出文件夹存在
+     os.makedirs(output_folder, exist_ok=True)
+     batch_split_images(source_folder, output_folder)
 
