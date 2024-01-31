@@ -2,7 +2,6 @@
 
 from PIL import Image
 import os
-
 def split_image(image_path, output_folder):
     # 打开图片
     img = Image.open(image_path)
@@ -41,7 +40,6 @@ def batch_split_images(folder_path, output_folder):
                 print(f"Successfully processed {filename}")
             except Exception as e:
                 print(f"Failed to process {filename}. Error: {e}")
-
 # 使用示例
 source_folder = "D:\\big"
 output_folder = "D:\\small"
