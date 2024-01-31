@@ -1,9 +1,4 @@
-# This is a Python code that can batch cut a large image into 2 small images
-# You need to install Python and the corresponding IDM, I am using Charm
-# You need to install the Pillow and So components in Python
-#这是一个Python代码，可以将一个大图片批量剪切为两个小图片
-#你需要安装Python和相应的IDM，我正在使用Charm
-#您需要在Python中安装Pillow和So组件
+# 这是一个Python代码，可以将一个大图片批量剪切为两个小图片，你需要安装Python和相应的IDM，我正在使用Charm，您需要在Python中安装Pillow和So组件
 
 from PIL import Image
 import os
